@@ -1,11 +1,12 @@
 import { Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+
 import React, { useState } from 'react'
 import LinearGradient from 'react-native-linear-gradient'
 import { InputField } from '../componets/InputFeilds'
 import { useNavigation } from '@react-navigation/native';
 
 
-const SignUp = () => {
+const SignIn = () => {
 
     const navigation = useNavigation();
 
@@ -19,7 +20,14 @@ const SignUp = () => {
             end={{ x: 0.2, y: 1 }}
             style={{ flex: 1 }}
         >
-            <ScrollView contentContainerStyle={styles.container}>
+            <ScrollView
+                style={{ flex: 1 }}
+                contentContainerStyle={styles.container}
+                showsVerticalScrollIndicator={false}
+                bounces={false}
+                scrollEnabled={false}
+            >
+
                 <Image source={require('../../Assets/Images/logo.png')} style={{ width: 100, height: 100 }} />
                 <Text style={styles.headText}>Free LinkUp</Text>
                 <Text style={styles.textN}>Connect. Grow. Succeed</Text>
@@ -72,11 +80,11 @@ const SignUp = () => {
 
 
                     {/* Sign In Button */}
-                    <TouchableOpacity style={styles.button}>
-                        <Text style={{ color: 'white', fontSize: 16, fontWeight: 'bold', textAlign: 'center' }}>Sign In</Text>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.replace('MainApp')} >
+                        <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold', textAlign: 'center' }}>Sign In</Text>
                     </TouchableOpacity >
 
-                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20, gap: 10, justifyContent: 'space-between' }} >
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5, gap: 10, justifyContent: 'space-between' }} >
                         <View style={{ borderBottomWidth: 1, width: '30%', borderColor: 'gray' }} ></View>
                         <Text style={{ color: 'gray', fontSize: 14, textAlign: 'center', marginVertical: 15 }}>
                             or continure with
@@ -85,7 +93,7 @@ const SignUp = () => {
 
                     </View>
 
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 20, marginBottom: 50, marginBottom: 10, gap: 20, width: '50%', alignSelf: 'center' }} >
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 20,marginBottom: 10, gap: 20, width: '50%', alignSelf: 'center' }} >
                         <TouchableOpacity style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center',borderColor:'gray' }} >
                             <Image source={require('../../Assets/Images/google.png')} style={{ width: 40, height: 40, alignSelf: 'center', marginTop: 10 }} />
                         </TouchableOpacity>
@@ -99,10 +107,11 @@ const SignUp = () => {
                     </Text> */}
                 </View>
 
-                <View>
-                    <Text style={{ color: 'black', fontSize: 14, fontWeight: 'bold', textAlign: 'center', marginTop: 15 }}>
-                        Don't have an account? <TouchableOpacity onPress={() => navigation.navigate('SignUp')}><Text style={{ color: '#3b82f6' }} >Sign Up</Text></TouchableOpacity>
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 30, gap: 10, justifyContent: 'space-between' }} >
+                    <Text style={{ color: 'black', fontSize: 14, fontWeight: 'bold', textAlign: 'center'  }}>
+                        Don't have an account? 
                     </Text>
+                    <Pressable onPress={() => navigation.navigate('SignUp')}><Text style={{ color: '#3b82f6' , fontWeight:'bold'}} >Sign Up</Text></Pressable>
                 </View>
 
             </ScrollView>
@@ -110,15 +119,16 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default SignIn
 
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        paddingTop: 50,
+        paddingTop: 30,
         paddingBottom: 30,
         width: '100%',
     },
+
     headText: {
         color: 'white',
         fontSize: 30,
@@ -135,7 +145,7 @@ const styles = StyleSheet.create({
     card: {
         width: '90%',
         backgroundColor: 'white',
-        borderRadius: 15,
+        borderRadius: 30,
         padding: 20,
         marginTop: 30,
         shadowColor: '#000',
@@ -149,7 +159,7 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 15,
         width: '100%',
-        marginTop: 10,
+        marginTop: 5,
         alignSelf: 'center'
     },
 })

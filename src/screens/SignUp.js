@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import LinearGradient from 'react-native-linear-gradient'
 import { InputField } from '../componets/InputFeilds'
@@ -14,19 +14,27 @@ const SignUp = () => {
 
     return (
         <LinearGradient
-            colors={['#3b82f6', '#ffffff']}
+            colors={['#3B82F6', '#93C5FD']}
+
             start={{ x: 0.8, y: 0 }}
             end={{ x: 0.2, y: 1 }}
             style={{ flex: 1 }}
         >
-            <ScrollView contentContainerStyle={styles.container}>
+            <ScrollView
+                style={{ flex: 1 }}
+                contentContainerStyle={styles.container}
+                showsVerticalScrollIndicator={false}
+                bounces={false}
+                scrollEnabled={false}
+            >
+
                 <Image source={require('../../Assets/Images/logo.png')} style={{ width: 100, height: 100 }} />
-                <Text style={styles.headText}>Create Free Account</Text>
-                <Text style={styles.textN}>Join professionals worldwide on Free LinkUp</Text>
+                <Text style={styles.headText}>Create an Account</Text>
+                <Text style={styles.textN}>Join Free LinkUp and start exploring opportunities</Text>
 
                 <View style={styles.card}>
                     {/* First & Last Name Fields Row */}
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 5 }}>
                         <View style={{ width: '48%' }}>
                             <InputField
                                 name="firstName"
@@ -51,7 +59,7 @@ const SignUp = () => {
                     </View>
 
                     {/* Email Field */}
-                    <View style={{ width: '100%', marginBottom: 15 }}>
+                    <View style={{ width: '100%', marginBottom: 5 }}>
                         <InputField
                             name="email"
                             label="Email"
@@ -65,7 +73,7 @@ const SignUp = () => {
                     </View>
 
                     {/* Password Field */}
-                    <View style={{ width: '100%', marginBottom: 15 }}>
+                    <View style={{ width: '100%', marginBottom: 5 }}>
                         <InputField
                             name="password"
                             label="Password"
@@ -79,7 +87,7 @@ const SignUp = () => {
                     </View>
 
                     {/* Confirm Password Field */}
-                    <View style={{ width: '100%', marginBottom: 20 }}>
+                    <View style={{ width: '100%', marginBottom: 7 }}>
                         <InputField
                             name="ConfirmPassword"
                             label="Confirm Password"
@@ -94,12 +102,15 @@ const SignUp = () => {
 
                     {/* Sign Up Button */}
                     <TouchableOpacity style={styles.button}>
-                        <Text style={{ color: 'white', fontSize: 16, fontWeight: 'bold', textAlign: 'center' }}>Sign Up</Text>
+                        <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold', textAlign: 'center' }}>Sign Up</Text>
                     </TouchableOpacity >
 
-                    <Text style={{ color: 'black', fontSize: 14, fontWeight: 'bold', textAlign: 'center', marginTop: 15 }}>
-                        Already have an account? <TouchableOpacity onPress={() => navigation.navigate('SignIn')}><Text style={{ color: '#3b82f6' }} >Sign In</Text></TouchableOpacity>
-                    </Text>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 30, gap: 10,justifyContent:'center' }} >
+                        <Text style={{ color: 'black', fontSize: 14, fontWeight: 'bold', textAlign: 'center' }}>
+                            Don't have an account?
+                        </Text>
+                        <Pressable onPress={() => navigation.navigate('SignIn')}><Text style={{ color: '#3b82f6', fontWeight: 'bold' }} >Sign In</Text></Pressable>
+                    </View>
                 </View>
 
             </ScrollView>
@@ -112,7 +123,7 @@ export default SignUp
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        paddingTop: 50,
+        paddingTop: 20,
         paddingBottom: 30,
         width: '100%',
     },
@@ -120,19 +131,21 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 30,
         fontWeight: '900',
-        marginTop: 20,
+        marginTop: 10,
     },
+
     textN: {
         color: 'white',
+        width: '80%',
         fontSize: 16,
         alignSelf: 'center',
         textAlign: 'center',
-        marginTop: 10,
+        marginTop: 5,
     },
     card: {
         width: '90%',
         backgroundColor: 'white',
-        borderRadius: 15,
+        borderRadius: 30,
         padding: 20,
         marginTop: 30,
         shadowColor: '#000',
@@ -146,7 +159,7 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 15,
         width: '100%',
-        marginTop: 10,
+        marginTop: 5,
         alignSelf: 'center'
     },
 })

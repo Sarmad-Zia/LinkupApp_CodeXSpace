@@ -40,7 +40,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   keyboardType = 'default',
   icon,
   placeholder,
-  placeholderTextColor = '#9ca3af', 
+  placeholderTextColor = '#A0ABC0', 
   value,
   onChangeText,
   onBlur,
@@ -128,8 +128,9 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 14,
-    fontWeight: '500',
-    color: '#374151', 
+    fontWeight: '600',
+    color: '#7B8AA0',
+
     marginBottom: 6,
   },
   inputWrapper: {
@@ -137,9 +138,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderRadius: 15,
-    height: 44,
+
+    borderRadius: 16,
+    height: 56,
   },
+
   borderDefault: {
     borderColor: '#d1d5db', 
   },
@@ -158,7 +161,8 @@ const styles = StyleSheet.create({
     height: '100%',
     fontSize: 16,
     color: '#111827', 
-    backgroundColor: 'transparent', 
+borderRadius: 16,
+    backgroundColor: '#F0F4F8',
   },
   inputWithIcon: {
     paddingLeft: 40,

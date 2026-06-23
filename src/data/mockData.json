@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "userName": "Ali Reyhan",
+    "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+    "timestamp": "4h ago",
+    "content": "Just finished building the frontend layout for our new platform update! Consistency in spacing and radii makes all the difference.",
+    "commentsCount": 12,
+    "sharesCount": 4
+  },
+  {
+    "id": "2",
+    "userName": "Sarah Jenkins",
+    "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+    "timestamp": "5h ago",
+    "content": "Looking for a junior full-stack developer experienced in React Native and Node.js for a remote project. Drop your portfolios below!",
+    "commentsCount": 45,
+    "sharesCount": 18
+  },
+  {
+    "id": "3",
+    "userName": "Zain Ahmed",
+    "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+    "timestamp": "6h ago",
+    "content": "Had an amazing mentoring session today. Remember guys, clean code and architecture matter just as much as a pretty UI.",
+    "commentsCount": 3,
+    "sharesCount": 1
+  },
+  {
+    "id": "4",
+    "userName": "Amna Khan",
+    "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150",
+    "timestamp": "8h ago",
+    "content": "Excited to announce that I am starting a new position as Associate Product Manager! Big thanks to everyone who supported me.",
+    "commentsCount": 89,
+    "sharesCount": 12
+  },
+  {
+    "id": "5",
+    "userName": "Ali Reyhan",
+    "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+    "timestamp": "1d ago",
+    "content": "",
+    "commentsCount": 0,
+    "sharesCount": 0
+  },
+  {
+    "id": "6",
+    "userName": "John Doe",
+    "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+    "timestamp": "1d ago",
+    "content": "Does anyone have a solid roadmap for transition from backend engineering to DevOps and cloud security? Recommendations appreciated.",
+    "commentsCount": 14,
+    "sharesCount": 5
+  },
+  {
+    "id": "7",
+    "userName": "Bilal Siddiqui",
+    "userAvatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150",
+    "timestamp": "2d ago",
+    "content": "Always containerize your apps early in the development lifecycle. Save yourself the 'it works on my machine' headache later.",
+    "commentsCount": 22,
+    "sharesCount": 9
+  },
+  {
+    "id": "8",
+    "userName": "Esha Fatima",
+    "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+    "timestamp": "2d ago",
+    "content": "Just published an article on using modern design tokens for dark interfaces. Check out the Marketplace tab to read it!",
+    "commentsCount": 7,
+    "sharesCount": 3
+  },
+  {
+    "id": "9",
+    "userName": "Omar Farooq",
+    "userAvatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150",
+    "timestamp": "3d ago",
+    "content": "A beautiful day in Lahore to sit down and optimize SQL queries. Found a bottleneck saving us 40% loading execution time.",
+    "commentsCount": 19,
+    "sharesCount": 2
+  },
+  {
+    "id": "10",
+    "userName": "Mary Smith",
+    "userAvatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150",
+    "timestamp": "3d ago",
+    "content": "Consistency is what transforms average work into excellence. Keep refining your design pixel by pixel.",
+    "commentsCount": 31,
+    "sharesCount": 11
+  },
+  {
+    "id": "11",
+    "userName": "Hamza Malik",
+    "userAvatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150",
+    "timestamp": "4d ago",
+    "content": "Can anyone recommend some reliable API testing tools for handling high-volume microservices?",
+    "commentsCount": 8,
+    "sharesCount": 0
+  },
+  {
+    "id": "12",
+    "userName": "Ayesha Umar",
+    "userAvatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150",
+    "timestamp": "4d ago",
+    "content": "Designing mobile UI dashboards requires meticulous attention to navigation nesting. It's easy to break user mental flows.",
+    "commentsCount": 15,
+    "sharesCount": 6
+  },
+  {
+    "id": "13",
+    "userName": "Ali Reyhan",
+    "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+    "timestamp": "5d ago",
+    "content": "Testing out custom fonts and lucide stroke weights on our application layouts today.",
+    "commentsCount": 2,
+    "sharesCount": 1
+  },
+  {
+    "id": "14",
+    "userName": "Robert Chen",
+    "userAvatar": "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?w=150",
+    "timestamp": "1w ago",
+    "content": "Great UI isn't just about what it looks like, it's about how it feels to interact with it seamlessly.",
+    "commentsCount": 54,
+    "sharesCount": 23
+  },
+  {
+    "id": "15",
+    "userName": "Sana Butt",
+    "userAvatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150",
+    "timestamp": "1w ago",
+    "content": "Is anyone attending the upcoming tech conference next week? Let's connect in the Hub!",
+    "commentsCount": 11,
+    "sharesCount": 4
+  },
+  {
+    "id": "16",
+    "userName": "Usman Tariq",
+    "userAvatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150",
+    "timestamp": "1w ago",
+    "content": "Just configured a continuous deployment pipeline using GitHub Actions. Automation saves so much manual overhead.",
+    "commentsCount": 9,
+    "sharesCount": 2
+  },
+  {
+    "id": "17",
+    "userName": "Jessica Taylor",
+    "userAvatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
+    "timestamp": "2w ago",
+    "content": "We are officially hiring 3 UI/UX Interns at our design agency. Check the Jobs tab on your app to apply directly.",
+    "commentsCount": 102,
+    "sharesCount": 41
+  },
+  {
+    "id": "18",
+    "userName": "Kashif Reza",
+    "userAvatar": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=150",
+    "timestamp": "2w ago",
+    "content": "Don't hardcode lengths and widths for flexible component elements. Use percentages or calc equations to adapt to all viewports.",
+    "commentsCount": 6,
+    "sharesCount": 1
+  },
+  {
+    "id": "19",
+    "userName": "Tayyaba Shah",
+    "userAvatar": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=150",
+    "timestamp": "3w ago",
+    "content": "Lucide React Native packages offer clean line icon rendering. Highly recommend them for modern professional network applications.",
+    "commentsCount": 13,
+    "sharesCount": 5
+  },
+  {
+    "id": "20",
+    "userName": "Ali Reyhan",
+    "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+    "timestamp": "1m ago",
+    "content": "Initial system alpha rollout complete. Ready to receive initial feedback from our program mentors.",
+    "commentsCount": 25,
+    "sharesCount": 8
+  }
+]
