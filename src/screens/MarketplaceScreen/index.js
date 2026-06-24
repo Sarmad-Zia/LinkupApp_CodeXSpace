@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import React from 'react'
+import { styles } from './style'
 
 const MarketplaceScreen = () => {
   return (
@@ -11,4 +12,4 @@ const MarketplaceScreen = () => {
 
 export default MarketplaceScreen
 
-const styles = StyleSheet.create({})
+

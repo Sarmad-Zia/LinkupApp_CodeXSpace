@@ -1,8 +1,9 @@
-import { Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Pressable, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import LinearGradient from 'react-native-linear-gradient'
-import { InputField } from '../componets/InputFeilds'
+import { InputField } from '../../componets/InputFeilds/InputFeilds.tsx'
 import { useNavigation } from '@react-navigation/native';
+import { styles } from './style';
 
 const SignUp = () => {
     const navigation = useNavigation();
@@ -28,7 +29,7 @@ const SignUp = () => {
                 scrollEnabled={false}
             >
 
-                <Image source={require('../../Assets/Images/logo.png')} style={{ width: 100, height: 100 }} />
+                <Image source={require('../../assets/images/logo.png')} style={{ width: 100, height: 100 }} />
                 <Text style={styles.headText}>Create an Account</Text>
                 <Text style={styles.textN}>Join Free LinkUp and start exploring opportunities</Text>
 
@@ -120,46 +121,4 @@ const SignUp = () => {
 
 export default SignUp
 
-const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        paddingTop: 20,
-        paddingBottom: 30,
-        width: '100%',
-    },
-    headText: {
-        color: 'white',
-        fontSize: 30,
-        fontWeight: '900',
-        marginTop: 10,
-    },
 
-    textN: {
-        color: 'white',
-        width: '80%',
-        fontSize: 16,
-        alignSelf: 'center',
-        textAlign: 'center',
-        marginTop: 5,
-    },
-    card: {
-        width: '90%',
-        backgroundColor: 'white',
-        borderRadius: 30,
-        padding: 20,
-        marginTop: 30,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-    },
-    button: {
-        backgroundColor: '#3b82f6',
-        padding: 15,
-        borderRadius: 15,
-        width: '100%',
-        marginTop: 5,
-        alignSelf: 'center'
-    },
-})

@@ -1,9 +1,10 @@
-import { Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Pressable, ScrollView, Text, TouchableOpacity, View } from 'react-native'
 
 import React, { useState } from 'react'
 import LinearGradient from 'react-native-linear-gradient'
-import { InputField } from '../componets/InputFeilds'
+import { InputField } from '../../componets/InputFeilds/InputFeilds.tsx'
 import { useNavigation } from '@react-navigation/native';
+import { styles } from './style';
 
 
 const SignIn = () => {
@@ -28,7 +29,7 @@ const SignIn = () => {
                 scrollEnabled={false}
             >
 
-                <Image source={require('../../Assets/Images/logo.png')} style={{ width: 100, height: 100 }} />
+                <Image source={require('../../assets/images/logo.png')} style={{ width: 100, height: 100 }} />
                 <Text style={styles.headText}>Free LinkUp</Text>
                 <Text style={styles.textN}>Connect. Grow. Succeed</Text>
 
@@ -95,10 +96,10 @@ const SignIn = () => {
 
                     <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 20,marginBottom: 10, gap: 20, width: '50%', alignSelf: 'center' }} >
                         <TouchableOpacity style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center',borderColor:'gray' }} >
-                            <Image source={require('../../Assets/Images/google.png')} style={{ width: 40, height: 40, alignSelf: 'center', marginTop: 10 }} />
+                            <Image source={require('../../assets/images/google.png')} style={{ width: 40, height: 40, alignSelf: 'center', marginTop: 10 }} />
                         </TouchableOpacity>
                         <TouchableOpacity style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center',borderColor:'gray' }} >
-                            <Image source={require('../../Assets/Images/github.png')} style={{ width: 50, height: 50, alignSelf: 'center', marginTop: 10 }} />
+                            <Image source={require('../../assets/images/github.png')} style={{ width: 50, height: 50, alignSelf: 'center', marginTop: 10 }} />
                         </TouchableOpacity>
                     </View>
 
@@ -121,45 +122,4 @@ const SignIn = () => {
 
 export default SignIn
 
-const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        paddingTop: 30,
-        paddingBottom: 30,
-        width: '100%',
-    },
 
-    headText: {
-        color: 'white',
-        fontSize: 30,
-        fontWeight: '900',
-        marginTop: 20,
-    },
-    textN: {
-        color: 'white',
-        fontSize: 16,
-        alignSelf: 'center',
-        textAlign: 'center',
-        marginTop: 10,
-    },
-    card: {
-        width: '90%',
-        backgroundColor: 'white',
-        borderRadius: 30,
-        padding: 20,
-        marginTop: 30,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-    },
-    button: {
-        backgroundColor: '#3b82f6',
-        padding: 15,
-        borderRadius: 15,
-        width: '100%',
-        marginTop: 5,
-        alignSelf: 'center'
-    },
-})

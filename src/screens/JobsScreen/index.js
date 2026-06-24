@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import React from 'react'
+import { styles } from './style'
 
 const JobsScreen = () => {
   return (
@@ -11,4 +12,4 @@ const JobsScreen = () => {
 
 export default JobsScreen
 
-const styles = StyleSheet.create({})
+

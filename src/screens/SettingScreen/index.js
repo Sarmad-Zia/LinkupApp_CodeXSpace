@@ -1,7 +1,8 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, Text, View } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Navigation } from 'lucide-react-native'
+import { styles } from './style'
 
 export default function SettingsScreen() {
   const navigation = useNavigation();
@@ -21,4 +22,4 @@ export default function SettingsScreen() {
   )
 }
 
-const styles = StyleSheet.create({})
+
