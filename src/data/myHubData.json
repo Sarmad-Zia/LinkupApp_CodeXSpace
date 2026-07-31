@@ -1,0 +1,95 @@
+{
+  "stats": [
+    { "id": "linkups", "label": "Link UPs", "value": 7, "icon": "Users" },
+    { "id": "pending", "label": "Pending", "value": 3, "icon": "UserPlus" },
+    { "id": "following", "label": "Following", "value": 4, "icon": "CheckCircle2" },
+    { "id": "followers", "label": "Followers", "value": 5, "icon": "Users2" }
+  ],
+  "pendingInvitations": [],
+  "myLinkUps": [
+    {
+      "id": "1",
+      "name": "testing user",
+      "role": "Bussines developer",
+      "avatar": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=200&q=80",
+      "location": "Sydey",
+      "status": "Linked"
+    },
+    {
+      "id": "2",
+      "name": "As Asfdsd",
+      "role": "Professional",
+      "avatar": null,
+      "location": null,
+      "status": "Linked"
+    },
+    {
+      "id": "3",
+      "name": "Anas Ali",
+      "role": "Professional",
+      "avatar": null,
+      "location": null,
+      "status": "Linked"
+    },
+    {
+      "id": "4",
+      "name": "mr test",
+      "role": "Professional",
+      "avatar": null,
+      "location": null,
+      "status": "Linked"
+    }
+  ],
+  "peopleYouMayKnow": [
+    {
+      "id": "1",
+      "name": "testing user",
+      "role": "Bussines developer",
+      "avatar": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=200&q=80",
+      "mutualLinkUps": 0,
+      "status": "linked"
+    },
+    {
+      "id": "2",
+      "name": "new user",
+      "role": "Professional",
+      "avatar": null,
+      "mutualLinkUps": 0,
+      "status": "following"
+    }
+  ],
+  "peopleToFollow": [
+    {
+      "id": "3",
+      "name": "Sarah Malik",
+      "role": "Product Designer",
+      "avatar": null
+    },
+    {
+      "id": "4",
+      "name": "hamiz Ali",
+      "role": "Recruiter",
+      "avatar": null
+    }
+  ],
+  "popularMarketplaces": [
+    { "id": "1", "title": "Expert Web Development Services", "price": "336.00", "image": null },
+    { "id": "2", "title": "Web Design Test", "price": "9.00", "image": null },
+    {
+      "id": "3",
+      "title": "Test",
+      "price": "23.00",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80"
+    }
+  ],
+  "suggestedGroups": [
+    { "id": "1", "name": "CSS", "members": 2 },
+    { "id": "2", "name": "test", "members": 5 }
+  ],
+  "recommendedCommunities": [
+    { "id": "1", "name": "hash", "members": 3 },
+    { "id": "2", "name": "community", "members": 2 },
+    { "id": "3", "name": "tech", "members": 2 },
+    { "id": "4", "name": "new community", "members": 2 }
+  ]
+}

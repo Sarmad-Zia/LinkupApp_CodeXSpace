@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "testing user",
+    "lastMessage": "Hello",
+    "time": "9:32 PM",
+    "avatar": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=200&q=80",
+    "online": true,
+    "unread": 0
+  },
+  {
+    "id": "2",
+    "name": "mr test",
+    "lastMessage": "sdsd",
+    "time": "9:41 PM",
+    "avatar": null,
+    "online": true,
+    "unread": 0
+  },
+  {
+    "id": "3",
+    "name": "jay singh",
+    "lastMessage": "Neww",
+    "time": "1:11 AM",
+    "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&q=80",
+    "online": true,
+    "unread": 0
+  }
+]

@@ -51,7 +51,7 @@ import {
       </View>
 
       {/* 2. Top Navigation Sub-Pill Selection Filter */}
-      <View style={styles.pillContainer}>
+      {/* <View style={styles.pillContainer}>
         <TouchableOpacity style={styles.inactivePill}>
           <User size={18} color="#64748b" style={styles.pillIcon} />
           <Text style={styles.inactivePillText}>Profile</Text>
@@ -66,7 +66,7 @@ import {
           <Compass size={18} color="#64748b" style={styles.pillIcon} />
           <Text style={styles.inactivePillText}>Discover</Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
 
       {/* 3. Create Creation Box Section */}
       <View style={styles.createPostCard}>

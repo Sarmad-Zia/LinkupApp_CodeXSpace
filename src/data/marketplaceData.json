@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "title": "Expert Web Development Services",
+    "description": "I provide professional Web Development services with a quick turnaround and 100% satisfaction guarantee.",
+    "category": "Web Development",
+    "price": 336,
+    "currency": "USD",
+    "seller": "Fors Two",
+    "rating": 5.0,
+    "reviewCount": 0,
+    "location": "Remote",
+    "gradient": ["#3b82f6", "#7c3aed"]
+  },
+  {
+    "id": "2",
+    "title": "UI/UX Design Consultation",
+    "description": "One-on-one consultation to improve your product's user experience and visual design.",
+    "category": "Design",
+    "price": 80,
+    "currency": "USD",
+    "seller": "jay singh",
+    "rating": 4.8,
+    "reviewCount": 6,
+    "location": "Lahore",
+    "gradient": ["#22c55e", "#16a34a"]
+  },
+  {
+    "id": "3",
+    "title": "Content Writing & Copy Editing",
+    "description": "High quality blog posts, articles and marketing copy tailored to your brand voice.",
+    "category": "Writing",
+    "price": 40,
+    "currency": "USD",
+    "seller": "Sarah Malik",
+    "rating": 4.6,
+    "reviewCount": 12,
+    "location": "Remote",
+    "gradient": ["#f59e0b", "#ef4444"]
+  }
+]

@@ -1,4 +1,159 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({})
-
+export const styles = StyleSheet.create({
+  feedContainer: {
+    flex: 1,
+  },
+  profileMainCard: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: '#e2e8f0',
+    marginBottom: 16,
+    alignItems: 'center',
+    paddingBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 4,
+  },
+  bannerImage: {
+    width: '100%',
+    height: 110,
+    resizeMode: 'cover',
+  },
+  avatarWrapper: {
+    marginTop: -45,
+    borderRadius: 50,
+    borderWidth: 3,
+    borderColor: '#ffffff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 4,
+  },
+  avatarImage: {
+    width: 85,
+    height: 85,
+    borderRadius: 42.5,
+  },
+  userNameText: {
+    fontSize: 19,
+    fontWeight: '700',
+    color: '#0f172a',
+    marginTop: 10,
+  },
+  userBioText: {
+    fontSize: 14,
+    color: '#94a3b8',
+    marginTop: 2,
+  },
+  dividerLine: {
+    width: '100%',
+    height: 1,
+    backgroundColor: '#f1f5f9',
+    marginVertical: 16,
+  },
+  analyticsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    paddingHorizontal: 16,
+    paddingVertical: 7,
+  },
+  analyticsLabel: {
+    fontSize: 14,
+    color: '#64748b',
+    fontWeight: '500',
+  },
+  analyticsValue: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#0f172a',
+  },
+  strengthCard: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: '#e2e8f0',
+    marginBottom: 16,
+  },
+  strengthHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  strengthIconBox: {
+    backgroundColor: '#eff6ff',
+    padding: 8,
+    borderRadius: 8,
+  },
+  strengthTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#0f172a',
+  },
+  strengthSubTitle: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#94a3b8',
+  },
+  strengthPercentage: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#1d4ed8',
+  },
+  progressBarBackground: {
+    width: '100%',
+    height: 6,
+    backgroundColor: '#f1f5f9',
+    borderRadius: 3,
+    marginTop: 14,
+    overflow: 'hidden',
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: '#1d4ed8',
+    borderRadius: 3,
+  },
+  completeProfileButton: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#eff6ff',
+    borderRadius: 25,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    marginTop: 16,
+    borderWidth: 1,
+    borderColor: '#bfdbfe',
+  },
+  completeButtonText: {
+    color: '#1d4ed8',
+    fontWeight: '600',
+    fontSize: 14,
+  },
+  menuLinksCard: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    paddingHorizontal: 16,
+    borderWidth: 1,
+    borderColor: '#e2e8f0',
+  },
+  menuItemRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderColor: '#f1f5f9',
+  },
+  menuItemText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#334155',
+    marginLeft: 14,
+  }
+});

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "author": "Furyyrd",
+    "title": "What is data science",
+    "excerpt": "Data science is an interdisciplinary field that uses statistics, programming and domain knowledge to extract insights from data.",
+    "category": "Technology",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    "readTime": "5 min read",
+    "date": "2 days ago"
+  },
+  {
+    "id": "2",
+    "author": "Hamiz Ali",
+    "title": "5 leadership lessons from remote teams",
+    "excerpt": "Leading a distributed team requires trust, clear communication and intentional culture building.",
+    "category": "Leadership",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+    "readTime": "4 min read",
+    "date": "4 days ago"
+  },
+  {
+    "id": "3",
+    "author": "Jay Singh",
+    "title": "Designing for accessibility in 2026",
+    "excerpt": "Accessible design isn't optional anymore, here's how to build inclusive products from day one.",
+    "category": "Design",
+    "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80",
+    "readTime": "6 min read",
+    "date": "1 week ago"
+  },
+  {
+    "id": "4",
+    "author": "Sarah Malik",
+    "title": "Navigating a career pivot",
+    "excerpt": "Changing industries is daunting, but a structured plan can make the transition smoother.",
+    "category": "Career",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    "readTime": "3 min read",
+    "date": "1 week ago"
+  }
+]

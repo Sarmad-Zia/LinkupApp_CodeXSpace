@@ -1,4 +1,566 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
+import { theme } from '../../theme/theme';
 
-export const styles = StyleSheet.create({})
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: theme.colors.background,
+  },
+  scrollContent: {
+    paddingBottom: 32,
+  },
 
+  // Header
+  headerWrap: {
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    backgroundColor: theme.colors.card,
+  },
+  eyebrow: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: theme.colors.textMuted,
+    letterSpacing: 0.5,
+    marginBottom: 2,
+  },
+  pageTitle: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: theme.colors.text,
+  },
+  pageSubtitle: {
+    fontSize: 14,
+    color: theme.colors.bodyText,
+    marginTop: 4,
+    marginBottom: 14,
+  },
+  searchBarContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors.background,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    paddingHorizontal: 14,
+    height: 48,
+    marginBottom: 16,
+  },
+  searchIcon: { marginRight: 8 },
+  searchInput: { flex: 1, fontSize: 15, color: theme.colors.inputText },
+
+  // Stats row
+  statsScroll: {
+    backgroundColor: theme.colors.card,
+  },
+  statsScrollContent: {
+    paddingHorizontal: 16,
+    paddingBottom: 16,
+  },
+  statCard: {
+    width: 110,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.background,
+    borderRadius: theme.radius.lg,
+    paddingVertical: 16,
+    marginRight: 10,
+  },
+  statValue: {
+    fontSize: 22,
+    fontWeight: '800',
+    color: theme.colors.text,
+    marginTop: 8,
+  },
+  statLabel: {
+    fontSize: 12,
+    color: theme.colors.textMuted,
+    marginTop: 2,
+  },
+
+  // Filters
+  filtersPanel: {
+    backgroundColor: theme.colors.card,
+    marginHorizontal: 16,
+    marginTop: 14,
+    padding: 16,
+    borderRadius: theme.radius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+  },
+  filtersEyebrow: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: theme.colors.textMuted,
+    letterSpacing: 0.5,
+    marginBottom: 12,
+  },
+  filterInputRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors.background,
+    borderRadius: 14,
+    paddingHorizontal: 14,
+    height: 48,
+    marginBottom: 10,
+  },
+  filterInput: {
+    flex: 1,
+    fontSize: 14,
+    color: theme.colors.inputText,
+    marginLeft: 10,
+  },
+  verifiedRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: 4,
+  },
+  verifiedLabel: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: theme.colors.text,
+  },
+
+  // Notice box (no pending invitations)
+  noticeBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 16,
+    marginTop: 18,
+  },
+  noticeText: {
+    fontSize: 14,
+    color: theme.colors.bodyText,
+    marginLeft: 8,
+  },
+
+  // Section header
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginHorizontal: 16,
+    marginTop: 22,
+    marginBottom: 12,
+  },
+  sectionHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  sectionHeaderTitle: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: theme.colors.textMuted,
+    letterSpacing: 0.5,
+    marginLeft: 6,
+  },
+  sectionCountBadge: {
+    backgroundColor: '#dbeafe',
+    borderRadius: 10,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    marginLeft: 8,
+  },
+  sectionCountBadgeText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: theme.colors.primary,
+  },
+  sectionActionLabel: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: theme.colors.primary,
+  },
+
+  // My Link Ups list
+  linkUpsList: {
+    paddingHorizontal: 16,
+  },
+  linkUpRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.radius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    padding: 14,
+    marginBottom: 12,
+  },
+  linkUpAvatar: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    marginRight: 12,
+  },
+  linkUpAvatarFallback: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: theme.colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  linkUpAvatarFallbackText: {
+    color: '#ffffff',
+    fontWeight: '800',
+    fontSize: 17,
+  },
+  linkUpContent: {
+    flex: 1,
+  },
+  linkUpName: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: theme.colors.text,
+  },
+  linkUpRole: {
+    fontSize: 13,
+    color: theme.colors.textMuted,
+    marginTop: 1,
+    marginBottom: 6,
+  },
+  linkUpStatusRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  linkedBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#dcfce7',
+    borderRadius: 10,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  linkedBadgeText: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#16a34a',
+    marginLeft: 4,
+  },
+  linkUpLocationRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 10,
+  },
+  linkUpLocationText: {
+    fontSize: 12,
+    color: theme.colors.textMuted,
+    marginLeft: 3,
+  },
+  chatIconButton: {
+    width: 38,
+    height: 38,
+    borderRadius: 12,
+    backgroundColor: '#dbeafe',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  // Discovery eyebrow
+  discoveryEyebrowRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 16,
+    marginTop: 22,
+  },
+  discoveryDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: theme.colors.primary,
+    marginRight: 6,
+  },
+  discoveryEyebrowText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: theme.colors.primary,
+    letterSpacing: 0.5,
+  },
+
+  // Horizontal lists
+  horizontalListContent: {
+    paddingLeft: 16,
+    paddingRight: 8,
+  },
+
+  // Person card (People you may know)
+  personCard: {
+    width: 190,
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.radius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    overflow: 'hidden',
+    marginRight: 12,
+  },
+  personCoverWrap: {
+    height: 70,
+    position: 'relative',
+  },
+  personCoverDark: {
+    height: 70,
+    backgroundColor: '#0f172a',
+  },
+  personCoverLight: {
+    height: 70,
+    backgroundColor: theme.colors.primary,
+  },
+  personMoreButton: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    backgroundColor: 'rgba(0,0,0,0.3)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  personAvatar: {
+    width: 64,
+    height: 64,
+    borderRadius: 18,
+    position: 'absolute',
+    bottom: -32,
+    left: '50%',
+    marginLeft: -32,
+    borderWidth: 3,
+    borderColor: theme.colors.card,
+  },
+  personAvatarFallback: {
+    width: 64,
+    height: 64,
+    borderRadius: 18,
+    position: 'absolute',
+    bottom: -32,
+    left: '50%',
+    marginLeft: -32,
+    borderWidth: 3,
+    borderColor: theme.colors.card,
+    backgroundColor: theme.colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  personAvatarFallbackText: {
+    color: '#ffffff',
+    fontWeight: '800',
+    fontSize: 22,
+  },
+  personBody: {
+    paddingTop: 40,
+    paddingHorizontal: 14,
+    paddingBottom: 14,
+    alignItems: 'center',
+  },
+  personName: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: theme.colors.text,
+    textAlign: 'center',
+  },
+  personRole: {
+    fontSize: 12,
+    color: theme.colors.bodyText,
+    textAlign: 'center',
+    marginTop: 2,
+  },
+  personMutual: {
+    fontSize: 11,
+    color: theme.colors.textMuted,
+    textAlign: 'center',
+    marginTop: 6,
+    marginBottom: 12,
+  },
+  linkedOutlineButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#16a34a',
+    borderRadius: 12,
+    paddingVertical: 8,
+    width: '100%',
+    marginBottom: 8,
+  },
+  linkedOutlineButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#16a34a',
+    marginLeft: 6,
+  },
+  followBackButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.background,
+    borderRadius: 12,
+    paddingVertical: 8,
+    width: '100%',
+  },
+  followBackButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: theme.colors.text,
+    marginLeft: 6,
+  },
+  linkUpFilledButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.primary,
+    borderRadius: 12,
+    paddingVertical: 8,
+    width: '100%',
+    marginBottom: 8,
+  },
+  linkUpFilledButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#ffffff',
+    marginLeft: 6,
+  },
+  followingButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.background,
+    borderRadius: 12,
+    paddingVertical: 8,
+    width: '100%',
+  },
+  followingButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: theme.colors.textMuted,
+    marginLeft: 6,
+  },
+
+  // Follow suggestion card
+  followSuggestionCard: {
+    width: 130,
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.radius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    alignItems: 'center',
+    padding: 14,
+    marginRight: 12,
+  },
+  followSuggestionAvatar: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    marginBottom: 10,
+  },
+  followSuggestionAvatarFallback: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: theme.colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 10,
+  },
+  followSuggestionAvatarFallbackText: {
+    color: '#ffffff',
+    fontWeight: '800',
+    fontSize: 20,
+  },
+  followSuggestionName: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: theme.colors.text,
+    textAlign: 'center',
+  },
+  followSuggestionRole: {
+    fontSize: 11,
+    color: theme.colors.textMuted,
+    textAlign: 'center',
+    marginTop: 2,
+    marginBottom: 10,
+  },
+  followSuggestionButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.primary,
+    borderRadius: 10,
+    paddingVertical: 7,
+    paddingHorizontal: 14,
+  },
+  followSuggestionButtonText: {
+    color: '#ffffff',
+    fontWeight: '700',
+    fontSize: 12,
+    marginLeft: 5,
+  },
+
+  // Mini list rows (marketplaces / groups / communities)
+  miniListWrap: {
+    paddingHorizontal: 16,
+  },
+  miniRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.radius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    padding: 12,
+    marginBottom: 10,
+  },
+  miniIconWrap: {
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    backgroundColor: '#dbeafe',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  miniThumb: {
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    marginRight: 12,
+  },
+  miniContent: {
+    flex: 1,
+  },
+  miniTitle: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: theme.colors.text,
+  },
+  miniSubtitle: {
+    fontSize: 12,
+    color: theme.colors.textMuted,
+    marginTop: 2,
+  },
+  joinButton: {
+    backgroundColor: theme.colors.background,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 10,
+  },
+  joinButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: theme.colors.text,
+  },
+
+  // Discover more
+  discoverMoreRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 18,
+  },
+  discoverMoreText: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: theme.colors.primary,
+    marginRight: 4,
+  },
+});
