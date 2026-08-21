@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "TssT",
+    "coverInitials": "HT",
+    "coverColor": "#22c55e",
+    "dateLabel": "Fri, Jun 19, 7:00 AM",
+    "attendingCount": 1,
+    "interestedCount": 1,
+    "isFree": true,
+    "ticketPrice": null,
+    "currency": null,
+    "isAttending": false,
+    "isInterested": false,
+    "isSaved": false,
+    "isMine": true,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "reposts": 0
+  }
+]

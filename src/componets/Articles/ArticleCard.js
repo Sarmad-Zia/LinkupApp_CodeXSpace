@@ -1,10 +1,16 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { styles } from '../../screens/ArticlesScreen/style';
+import {useNavigation} from '@react-navigation/native';
 
 const ArticleCard = ({ item }) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.articleCard} activeOpacity={0.85}>
+    <TouchableOpacity style={styles.articleCard} activeOpacity={0.85} onPress={() => {
+      navigation.navigate('ArticleDetail', {
+        article: item
+      });
+    }}>
       <Image source={{ uri: item.image }} style={styles.articleImage} />
       <View style={styles.articleBody}>
         <View style={styles.categoryPill}>

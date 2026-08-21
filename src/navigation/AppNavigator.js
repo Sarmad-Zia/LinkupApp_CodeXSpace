@@ -26,7 +26,13 @@ import MarketplaceScreen from '../screens/MarketplaceScreen/index';
 import SettingsScreen from '../screens/SettingScreen/index';
 import OnBoardingScreen from '../screens/OnBoarding/index';
 import SignInScreen from '../screens/SignInScreen/index';
-import SignUpScreen from '../screens/SignUpScreen/index';   
+import SignUpScreen from '../screens/SignUpScreen/index';
+import logo from '../assets/images/logo.png';
+import SavedScreen from '../screens/SavedScreen/index';
+import GroupsScreen from '../screens/GroupsScreen/index';
+import EventsScreen from '../screens/EventsScreen/index';
+import LearningScreen from '../screens/LearningScreen/index';
+import ArticleDetailScreen from '../screens/ArticleDetailScreen/index';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -39,7 +45,7 @@ const CustomHeader = ({ navigation, userName, balance }) => {
   return (
     <SafeAreaView edges={['top']} style={styles.headerContainer}>
       <View style={styles.headerLeft}>
-        <Image source={require('../assets/images/logo.png')} style={styles.headerLogo} />
+        <Image source={logo} style={styles.headerLogo} />
         <Text style={styles.headerUserText}>{userName}</Text>
       </View>
 
@@ -149,6 +155,25 @@ const DrawerNavigator = () => {
           drawerIcon: ({ color, size }) => <Settings color={color} size={size} />,
         }}
       />
+      <Drawer.Screen
+        name="Saved"
+        component={SavedScreen}
+        options={{
+          title: 'Saved',
+          drawerItemStyle: { height: 0 }, // hide from the drawer's own menu list
+        }}
+      />
+      <Drawer.Screen
+        name="Groups"
+        component={GroupsScreen}
+        options={{
+          title: 'Groups',
+          drawerItemStyle: { height: 0 }, // hide from the drawer's own menu list
+        }}
+      />
+      <Drawer.Screen name="Events" component={EventsScreen} options={{ title: 'Events', drawerItemStyle: { height: 0 } }} />
+      <Drawer.Screen name="Learning" component={LearningScreen} options={{ title: 'Learning', drawerItemStyle: { height: 0 } }} />
+      <Drawer.Screen name="ArticleDetail" component={ArticleDetailScreen} options={{ title: 'ArticleDetail', drawerItemStyle: { height: 0 } }} />
     </Drawer.Navigator>
   );
 };

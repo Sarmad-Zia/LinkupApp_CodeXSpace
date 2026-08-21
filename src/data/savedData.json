@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "type": "Post",
+    "authorName": "Taha Shafique",
+    "avatarUrl": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+    "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600",
+    "caption": "sbvi s"
+  },
+  {
+    "id": "2",
+    "type": "Post",
+    "authorName": "Abdullah Azalea",
+    "avatarUrl": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+    "imageUrl": "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=600",
+    "caption": "Loving this ride 🚗"
+  },
+  {
+    "id": "3",
+    "type": "Post",
+    "authorName": "Sara Ahmed",
+    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200",
+    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "caption": "Great sunset today"
+  }
+]

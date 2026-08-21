@@ -1,0 +1,21 @@
+{
+  "yourGroups": [],
+  "discoverGroups": [
+    {
+      "id": "1",
+      "name": "CSS",
+      "membersCount": 4,
+      "visibility": "Public",
+      "description": "preparation for css",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600"
+    },
+    {
+      "id": "2",
+      "name": "test",
+      "membersCount": 5,
+      "visibility": "Public",
+      "description": "asidlkasd",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600"
+    }
+  ]
+}

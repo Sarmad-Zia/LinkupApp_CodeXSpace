@@ -14,11 +14,12 @@ import {
   Bookmark, ChevronRight, Star, Calendar, Bookmark as Ribbon,
   Users, GraduationCap
 } from 'lucide-react-native';
-
+import { useNavigation } from '@react-navigation/native';
 import { styles } from './style';
 
 const ProfileScreen = () => {
   const [currentSelection, setCurrentSelection] = useState('Profile');
+  const navigation = useNavigation();
 
   // Dynamically using online source links matching WhatsApp Image 2026-06-29 at 4.03.16 PM.jpeg
   const profileData = {
@@ -99,27 +100,27 @@ const ProfileScreen = () => {
 
         {/* Extended Action List Links */}
         <View style={styles.menuLinksCard}>
-          <TouchableOpacity style={styles.menuItemRow}>
+          <TouchableOpacity style={styles.menuItemRow} onPress={() => navigation.navigate('Saved')}>
             <Ribbon size={20} color="#64748b" />
             <Text style={styles.menuItemText}>Saved items</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItemRow}>
+          <TouchableOpacity style={styles.menuItemRow} onPress={() => navigation.navigate('Groups')}>
             <Users size={20} color="#64748b" />
             <Text style={styles.menuItemText}>Communities / Groups</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItemRow}>
-            <Calendar size={20} color="#64748b" />
-            <Text style={styles.menuItemText}>Events</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.menuItemRow}>
+          <TouchableOpacity style={styles.menuItemRow} onPress={() => navigation.navigate('Articles')}>
             <FileText size={20} color="#64748b" />
             <Text style={styles.menuItemText}>Articles</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.menuItemRow, { borderBottomWidth: 0 }]}>
+          <TouchableOpacity style={styles.menuItemRow} onPress={() => navigation.navigate('Events')}>
+            <Calendar size={20} color="#64748b" />
+            <Text style={styles.menuItemText}>Events</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={[styles.menuItemRow, { borderBottomWidth: 0 }]} onPress={() => navigation.navigate('Learning')}>
             <GraduationCap size={20} color="#64748b" />
             <Text style={styles.menuItemText}>Learning</Text>
           </TouchableOpacity>
